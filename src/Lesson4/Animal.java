@@ -1,6 +1,6 @@
-package Lesson3;
+package Lesson4;
 
-public abstract class Animal extends Creature{
+public abstract class Animal extends Creature {
     String name;
     String sex;
     String owner;

@@ -1,4 +1,4 @@
-package Lesson3;
+package Lesson4;
 
 public class Cat extends Animal implements Fight {
     private final String reply;

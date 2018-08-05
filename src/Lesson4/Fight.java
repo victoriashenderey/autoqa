@@ -1,4 +1,4 @@
-package Lesson3;
+package Lesson4;
 
 public interface Fight {
     void fight();

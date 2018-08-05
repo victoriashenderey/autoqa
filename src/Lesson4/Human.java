@@ -1,6 +1,6 @@
-package Lesson3;
+package Lesson4;
 
-public class Human extends Creature implements Fight{
+public class Human extends Creature implements Fight {
     private final String punch;
     private final int strength;
     private final int health;

@@ -1,4 +1,4 @@
-package Lesson3;
+package Lesson4;
 
 public abstract class Creature implements Fight {
     public abstract void fight();
