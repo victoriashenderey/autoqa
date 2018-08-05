@@ -1,36 +1,19 @@
 package Lesson4;
 
-public class Dog extends Animal implements Fight {
+public class Dog extends Animal {
+    private final String color;
+    private final String age;
 
-            Dog(Boolean home, String name) {
-                this.home = "true";
-                this.name = name;
-            }
+    Dog(String sex, String name, String color, String age) {
+        this.color = color;
+        this.age = age;
+        this.name = name;
+        this.sex = sex;
+    }
 
-            Dog(String name) {
-                this.name = name;
-            }
 
-            Dog(Boolean home) {
-                this.home = "true";
-            }
-
-            public void info() {
-                if (home == null || home != "true") {
-                        System.out.print("бездомный пёс ");
-                    } else System.out.print("домашний пёс ");
-                if (name == null) {
-                        System.out.println("без имени");
-                    } else System.out.println(name);
-            }
-
-            public void voice() {
-                System.out.println("Wuf-wuf ");
-            }
-
-    @Override
-    public void fight() {
-            System.out.println("Собачий укус");
-        }
+    public void info(){
+        System.out.println(sex+" "+name+", "+color+", "+age);
+    }
 
 }

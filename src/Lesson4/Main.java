@@ -1,34 +1,34 @@
 package Lesson4;
+import java.util.*;
 
 public class Main {
     public static void main (String args []) {
-                Cat Katze = new Cat("кошка","Мамзель", "Мария Иосифовна", "ЖК на Остоженке","-- Моя хозяйка сошла с ума и привезла меня в Чертаново! Я хочу обратно в элитное общество!" );
-                Cat Kater = new Cat("кот","Кислый", "Иван Петрович", "однушка в Чертаново","-- Эй, богачка, кошачья мята есть? А если найду?!");
-                Dog Hund =  new Dog("Барон");
-                Dog Welp =  new Dog(true);
+                Cat Katze = new Cat("кошка","Мурка", "белый", "2 года " );
+                Cat Kater = new Cat("кот","Барсик", "черный", "1 год");
+                Dog Hund =  new Dog("пёс","Барон", "рыжий", "полгода");
+                Dog Welp =  new Dog("собака","Стрелка", "серый", "3 месяца");
 
-                System.out.println("Добро пожаловать в наш зоопарк! Знакомьтесь:");
-                Welp.voice();
-                Hund.voice();
+                System.out.println("Добро пожаловать в наш приют! Знакомьтесь:");
                 Hund.info();
                 Welp.info();
-                Katze.info();Katze.voice();
-                Kater.info();Kater.voice();
+                Katze.info();
+                Kater.info();
 
-                System.out.println("Похоже, кошки не поделили территорию...");
+                List<Animal> animals = new ArrayList<Animal>();
+                animals.add(Katze);
+                animals.add(Kater);
+                animals.add(Hund);
+                animals.add(Welp);
 
-                Katze.fight();
-                Kater.fight();
-                Human Petrovich = new Human("Иван Петрович","аперкот", 5, 100);
-                Human Maria = new Human("Мария Иосифовна","вертушка", 10, 100);
-                Petrovich.fight();
-                Maria.getHealth();
-                Maria.fight();
-                Petrovich.voice();
-                Hund.fight();
-                Welp.fight();
-                Maria.voice();
-                Petrovich.run();
-                Kater.run();
+                int randomNumber = (int)(Math.random()*4+1);
+                System.out.println(randomNumber);
+                if(randomNumber==1) System.out.println("Поздравляем! Вы стали счастливым обладателем кошки Мурки");
+                else {
+                    if (randomNumber==2) System.out.println("Поздравляем! Вы стали счастливым обладателем кота Барсика");
+                    else{
+                        if (randomNumber==3) System.out.println("Поздравляем! Вы стали счастливым обладателем пса Барона");
+                        else System.out.println("Поздравляем! Вы стали счастливым обладателем cобаки Стрелки");
+                    }
+                }
             }
 }
