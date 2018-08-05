@@ -1,0 +1,6 @@
++*
++/out
++!/src
++!Solution*.java
++!/Solution*
++!.gitignore
